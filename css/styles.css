@@ -607,7 +607,7 @@ textarea {
 }
 
 .row .row {
-    /* width: auto; */
+    width: auto;
     max-width: none;
     margin-left: calc(var(--gutter) * -1);
     margin-right: calc(var(--gutter) * -1);
@@ -3543,7 +3543,7 @@ img.u-pull-left {
 }
 
 .services-list .column:nth-child(2n + 1) {
-    padding-right: 2.8rem;
+    /* padding-right: 2.8rem; */
 }
 
 .services-list .column:nth-child(2n + 2) {
@@ -3742,7 +3742,7 @@ img.u-pull-left {
     object-fit: cover;
     width: 100%;
     height: 500px;
-    border: 2px solid #0000009c;
+    border: 2px solid black;
 }
 
 /* portfolio info
@@ -3902,13 +3902,13 @@ img.u-pull-left {
 }
 
 .video-block__bg-left {
-    background-image: url(../images/video-bg-01.jpg);
+    background-image: url(../images/portfolio/contra/contra_cover.webp);
     left: 0;
     right: 50%;
 }
 
 .video-block__bg-right {
-    background-image: url(../images/video-bg-02.jpg);
+    background-image: url(../images/portfolio/serenity/Cover.webp);
     left: 50%;
     right: 0;
 }
@@ -4082,7 +4082,7 @@ img.u-pull-left {
  * ------------------------------------------------------------------- */
 .s-contact {
     background-color: var(--color-gray-14);
-    padding-top: var(--vspace-5);
+    /* padding-top: var(--vspace-5); */
     padding-bottom: var(--vspace-3);
 }
 
@@ -4251,10 +4251,10 @@ img.u-pull-left {
 
 .hero-picture {
     display: block;
-    width: 50%;
+    width: 70%;
     /* max-width: 800px; */
-    max-height: 100vh;
-    height: 100%;
+    max-height: 70vh;
+    /* height: 100%; */
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3rem;
@@ -4318,6 +4318,7 @@ img.u-pull-left {
     background-color: #090909;
     gap: 50px;
     max-width: 1200px;
+    margin-bottom: 5vh;
 }
 
 .p-details {
@@ -4390,7 +4391,7 @@ text-align: center;
 .vidcontainer {
     width: 80vw;
     margin: auto;
-    padding: 5vh 0;
+    padding-bottom: 5vh;
 }
 
 .vidplay {
