@@ -4283,11 +4283,15 @@ img.u-pull-left {
 }
 
 .about-caption {
+    /* display: flex; */
     position: relative;
-    top: 70vh;
+    z-index: 2;
+    bottom: var(--vspace-1_5);
+    left: 0;
     background-color: rgba(0, 0, 0, 0.5);
     width: fit-content;
     padding: 0 2rem;
+    margin-left: -3rem;
 }
 
 .about-img {
@@ -4491,7 +4495,7 @@ text-align: center;
 
 @media screen and (max-width: 800px) {
 
-    .about-wrap {
+    /* .about-wrap {
         display: block
     }
 
@@ -4506,7 +4510,7 @@ text-align: center;
         background-position: center;
         object-fit: cover;
         margin: auto;
-    }
+    } */
 
     .folio-item__info {
         opacity: 1;
