@@ -4608,6 +4608,11 @@ text-align: center;
         flex-wrap: wrap;
     }
 
+    .filtercontainer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     /* .about-wrap {
         display: block
     }
