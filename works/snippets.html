@@ -236,96 +236,276 @@
         <!-- end s-intro -->
       </section>
       <div class="port-wrap">
-        <div style="background-color: #2c284f" class="port-box">
-          <img class="port-img" src="../images/portfolio/snippets/1.webp" />
-          <div class="port-text">
-            <h4>Role and Process</h4>
-            <p>
-              I served as the User-experience and User-interface designer for
-              the app.
+        <div class="port-box">
+        <h2>Introduction</h2>
+        <div class="port-text">
+          <h4>Language preservation</h4>
+          <p>The idea for a language learning app started with the realization that regional languages and dialects are slowly fading away. While modernization gives us many benefits, it also takes away the intricacies of regional culture are overtaken by a unified metropolitan society. This is clearly evident in Pakistani society where learning English takes precedence over mastering your own mother tongue, many people cannot speak Urdu or Sindhi without interjecting borrowed words from English where there is no need to.</p>
+          <p>To preserve and promote regional languages and dialects, and allow people to easily learn them I decided to create Snippets. Which would take advantage of AI and also help solve the problems it faces.</p>
+          <h4>Shortcomings of Artificial Intelligence</h4>
+          <p>Large language models, currently face an array of problems which causes it to output false information, or have a lack of contextual understanding. This is caused by a variety of factors including but not limited to;</p>
+          <ul>
+            <li>Bias in training data</li>
+            <li>Limited real-time knowledge</li>
+            <li>Lack of niche or specialized data</li>
+          </ul>
+          <p>Snippets was built to solve these two problems simultaneously. Where documenting language would also help improve AI in a way that they compliment each other.</p>
+        </div>
+        <h2>Research and Insights</h2>
+        <div class="port-text">
+          <h4>Understanding the Users</h4>
+          <p>
+            As part of the user research process, I conducted surveys to
+            identify common challenges in language learning, gaining insights
+            into the difficulties learners face. Additionally, I analyzed
+            existing language learning apps to pinpoint gaps and areas for
+            improvement. To further refine the research, I interviewed language
+            learners to understand their preferences, needs, and expectations,
+            ensuring that the findings were user-centered and actionable.
+          </p>
+          <h4>Key Findings</h4>
+          <ul>
+            <li>
+              Users found visual and contextual learning more effective than
+              rote memorization.
+            </li>
+            <li>
+              There was a strong interest in gamification and community-driven
+              learning.
+            </li>
+            <li>
+              Many users struggled with retaining vocabulary not used in daily
+              life.
+            </li>
+          </ul>
+          <h4>Competitive analysis</h4>
+          <p>A competitive analysis of language learning apps revealed same issues that were mentioned in the survey and the interviews. The apps follow a standardized course, teaching vocabulary that is often irrelavant to the users' current context. Similarly they often keep focus of the users on the screen, where lessons get blurred together. While they use graphics and gamification elements, they still lack any social features to connect users to fellow learners.</p>
+          <p>This promted me to try a different aproach to helping users learn vocabulary, where these issues are addressed and solved using two learning strategies, namely proximity learning, and spatial mnemonics</p>
+          <h4>Design Strategies</h4>
+          <div class="port-flex">
+            <div class="port-item">
+              <img
+                class="port-img"
+                src="/images/portfolio/snippets/prox.webp"
+                alt=""
+              />
+              <p class="port-caption">Proximity Learning</p>
+            </div>
+            <div class="port-item">
+              <img
+                class="port-img"
+                src="/images/portfolio/snippets/space.webp"
+                alt=""
+              />
+              <p class="port-caption">Spatial Nuemonics</p>
+            </div>
+          </div>
+          <div class="port-flex">
+            <div>
+              <h5>Proximity Learning</h5>
+              <p>
+                Contrary to a standard course, the app would focus on teaching words
+                for objects that users find around themselves and interact with
+                on a daily bases, similar to a child who learns words as they
+                become important in their lives and will be used recurringly.
+              </p>
+            </div>
+            <div>
+              <h5>Spatial Mnemonics</h5>
+              <p>
+                The app would display the name of the object in augmented reality on
+                top of the object seen through the phone, this engages users
+                spatial memory and the names can be easily recalled while seeing
+                the object in real life similar to Method of loci. This idea is
+                supported by the situated cognition theory (1989).
+              </p>
+            </div>
+          </div>
+          <h4>
+            Based on these findings, Snippets was built with the following
+            guiding principles:
+          </h4>
+          <ul>
+            <li>
+              Context-based learning: Users learn words that are immediately
+              useful in their lives.
+            </li>
+            <li>
+              Spatial Neumonics: User retain words better associated in physical
+              space rather than a flat screen, augmented reality can be used to
+              achieve this.
+            </li>
+            <li>
+              Gamification elements: Users earn points for learning, tagging,
+              and reviewing objects.
+            </li>
+            <li>
+              Community-driven approach: The database grows through user
+              contributions, and allows them to connect with fellow learners.
+            </li>
+          </ul>
+        </div>
+        <h2>Design Process</h2>
+        <div class="port-text">
+          <h4>Systems Development</h4>
+          <div class="port-item">
+            <img
+              class="port-img"
+              src="/images/portfolio/snippets/2.webp"
+              alt=""
+            />
+            <p class="port-caption">Timeline and Process</p>
+          </div>
+          <br>
+          <p>
+            The app was designed to function in a feedback loop, where users
+            earn points by tagging objects and reviewing contributions. Which inturn teaches learners said language processed through the large language model. This enhances the AI's accuracy.
+          </p>
+          <ul>
+            <li>
+              Object Recognition via AI: Users scan objects with their camera,
+              and the AI suggests the corresponding word in language they are trying to learn.
+            </li>
+            <li>
+              Tagging & Reviewing: Users can contribute new words or validate
+              existing ones to maintain accuracy.
+            </li>
+            <li>
+              Points System: Users earn and spend points by using either of the previous features, maintaining a balance of contribution and learning.
+            </li>
+          </ul>
+          <h4>AR Navigation</h4>
+          <div class="port-flex">
+            <div class="port-item">
+              <img
+                class="port-img"
+                src="/images/portfolio/snippets/3a.webp"
+                alt=""
+              />
+              <p class="port-caption">
+                Objects highlighted in blue are to be selected while object in
+                yellow are next in line based on proximity to the hovered one.
+              </p>
+            </div>
+            <div class="port-item">
+              <img
+                class="port-img"
+                src="/images/portfolio/snippets/3b.webp"
+                alt=""
+              />
+              <p class="port-caption">
+                Once an object is selected, the highlight inside the object to
+                select smaller parts of it which is controlled by different
+                arrows color will turn to green, and users can go.
+              </p>
+            </div>
+          </div>
+          <br>
+          <p>Developing the Augmented Reality navigation and interaction was the most interesting aspect of designing for the app. The view through the app can be unpredictable, with multiple object simultaneously visible in the surrounding of the object, as well as objects being defined in a way that is similar to a russian doll. Every object is made up of smaller objects, which is why it was neccesary to create a way focus an object, and then go through it's inner selection. This all depends on the view scale of the camera as well. </p>
+          <h4>Site Map and User Flows</h4>
+          <div class="port-item">
+            <img style="filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.43));"
+              class="port-img"
+              src="/images/portfolio/snippets/4.webp"
+              alt=""
+            />
+            <p class="port-caption">Site Map</p>
+          </div>
+          <p></p>
+          <div class="port-item">
+            <img
+              class="port-img"
+              src="/images/portfolio/snippets/5.webp"
+              alt=""
+            />
+            <p class="port-caption">User flows</p>
+          </div>
+          <p>User flows following two main interactions</p>
+          <ul>
+            <li>Leaning and practicing vocabulary</li>
+            <li>Contributing and rewieving data</li>
+          </ul>
+        </div>
+        <h2>Wireframing</h2>
+        <div>
+          <div class="port-item">
+            <img
+              class="port-img"
+              src="/images/portfolio/snippets/wire 1.webp"
+              alt=""
+            />
+            <p class="port-caption">
+              Given to every member of the cult at the time of initiation, this
+              four eyed mask made of bone is said
+            </p>
+          </div>
+          <div class="port-item">
+            <img
+              class="port-img"
+              src="/images/portfolio/snippets/wire 2.webp"
+              alt=""
+            />
+            <p class="port-caption">
+              Given to every member of the cult at the time of initiation, this
+              four eyed mask made of bone is said
+            </p>
+          </div>
+          <div class="port-item">
+            <img
+              class="port-img"
+              src="/images/portfolio/snippets/wire 3.webp"
+              alt=""
+            />
+            <p class="port-caption">
+              Given to every member of the cult at the time of initiation, this
+              four eyed mask made of bone is said
+            </p>
+          </div>
+          <div class="port-item">
+            <img
+              class="port-img"
+              src="/images/portfolio/snippets/wire 4.webp"
+              alt=""
+            />
+            <p class="port-caption">
+              Given to every member of the cult at the time of initiation, this
+              four eyed mask made of bone is said
             </p>
           </div>
         </div>
-        <div style="background-color: #2c284f" class="port-box">
-          <img class="port-img" src="../images/portfolio/snippets/2.webp" />
-          <div class="port-text">
-            <h4>System</h4>
-            <p>
-              The use of AI is based in points the user can earn and spend,
-              which in turns improves the AI in a feedback loop.
+        <h2>Styles and UI</h2>
+        <div>
+          <div class="port-item">
+            <img
+              class="port-img"
+              src="/images/portfolio/snippets/6.webp"
+              alt=""
+            />
+            <p class="port-caption">
+              Given to every member of the cult at the time of initiation, this
+              four eyed mask made of bone is said
             </p>
           </div>
-        </div>
-        <div style="background-color: #2c284f" class="port-box">
-          <img class="port-img" src="../images/portfolio/snippets/3.webp" />
-          <div class="port-text">
-            <h4>AR Navigation</h4>
-            <p>
-              Objects highlighted in blue are to be selected while object in
-              yellow are next in line based on proximity to the one hovered one.
-              <br />
-              <br />
-              Once an object is selected, the highlight color will turn to
-              green, and users can go inside the object to select smaller parts
-              of it which is controlled by different arrows.
+          <div class="port-item">
+            <img
+              class="port-img"
+              src="/images/portfolio/snippets/7.webp"
+              alt=""
+            />
+            <p class="port-caption">
+              Given to every member of the cult at the time of initiation, this
+              four eyed mask made of bone is said
             </p>
           </div>
-        </div>
-        <div style="background-color: #2c284f" class="port-box">
-          <img class="port-img" src="../images/portfolio/snippets/4.webp" />
+          <h2>Learning and Takeaways</h2>
           <div class="port-text">
-            <h4>Site Map</h4>
-            <p></p>
-          </div>
+            <h5>AI needs to reach critical users.</h5>
+            <p>Users revealed the navigation map was </p>
+            <h5>Relying on user generated data.</h5>
+            <p>Users revealed the navigation map was </p>
+            <h5>AR accessibility and Alternatives</h5>
+            <p>Feasibility of of AR navigation is untested and would require developmental input. Not to mention the accessibility concerns of non-tech-savvy users and uses on older devices. It is imperative that an alternate way be proposed to select the objects.</p>
         </div>
-        <div style="background-color: #2c284f" class="port-box">
-          <img class="port-img" src="../images/portfolio/snippets/5.webp" />
-          <div class="port-text">
-            <h4>User Flows</h4>
-            <p></p>
-          </div>
-        </div>
-        <div style="background-color: #2c284f" class="port-box">
-          <img class="port-img" src="../images/portfolio/snippets/wire1.webp" />
-          <div class="port-text">
-            <h4>Wireframes</h4>
-            <p>3 Main Screens, Home, Learning, and contributing.</p>
-          </div>
-        </div>
-        <div style="background-color: #2c284f" class="port-box">
-          <img class="port-img" src="../images/portfolio/snippets/wire2.webp" />
-          <div class="port-text">
-            <h4>Wireframes</h4>
-            <p>Socials, Feed, group and chat.</p>
-          </div>
-        </div>
-        <div style="background-color: #2c284f" class="port-box">
-          <img class="port-img" src="../images/portfolio/snippets/wire3.webp" />
-          <div class="port-text">
-            <h4>Wireframes</h4>
-            <p>Learning, practice and notifications.</p>
-          </div>
-        </div>
-        <div style="background-color: #2c284f" class="port-box">
-          <img class="port-img" src="../images/portfolio/snippets/wire4.webp" />
-          <div class="port-text">
-            <h4>Wireframes</h4>
-            <p>Review, contribute and profile Screens.</p>
-          </div>
-        </div>
-        <div style="background-color: #2c284f" class="port-box">
-          <img class="port-img" src="../images/portfolio/snippets/6.webp" />
-          <div class="port-text">
-            <h4>Styleguide</h4>
-            <p></p>
-          </div>
-        </div>
-        <div style="background-color: #2c284f" class="port-box">
-          <img class="port-img" src="../images/portfolio/snippets/7.webp" />
-          <div class="port-text">
-            <h4>Components</h4>
-            <p></p>
-          </div>
         </div>
       </div>
 
