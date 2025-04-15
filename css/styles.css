@@ -4489,6 +4489,7 @@ img.u-pull-left {
 .port-img {
     margin: auto;
     border-radius: 2rem;
+    max-height: 70vh;
 }
 
 
